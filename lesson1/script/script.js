@@ -8,7 +8,7 @@ const products = [
 ];
 const main = document.querySelector('.products');
 
-const renderProduct = (title, price) => {
+const renderProduct = ({title, price} = {title: 'test', price: 3000}) => {
     return `<div class="product-item">
     <h3>${title}</h3>
     <p>${price}</p>
@@ -18,9 +18,9 @@ const renderProduct = (title, price) => {
 
 const renderProducts = (list = []) => {
     const productList = list.map((item) => {
-        return renderProduct(item.title, item.price);
+        return renderProduct(item);
     });
-    main.innerHTML = productList.join('');
+    main.insertAdjacentHTML('afterbegin', productList.join(''));
 };
 
 renderProducts(products);
