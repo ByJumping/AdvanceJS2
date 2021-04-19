@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: calc(50% - 670px);
+    padding-right: calc(50% - 670px);
+}
+
+.products {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(50% - 670px);
+    padding-right: calc(50% - 670px);
+}
+
+.product-item {
+    box-shadow: 17px 19px 24px rgb(0 0 0 / 13%);
+    padding: 80px;
+    background-image: url(https://ksonline.ru/wp-content/uploads/2020/02/electronic.jpeg);
+}
+
+.btn-cart {
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-cart:hover {
+    background: #1d49aa;
+  }
+
+
+  .by-btn {
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #467695;
+    color: #fff;
+    padding: 2px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .by-btn:hover {
+    background: #1d49aa;
+  }
+  
+  .by-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+  }
