@@ -77,8 +77,8 @@ class ProductItem {
 // CartItem
 
 // class CartItem {
-//     _name = ''
-//     _price = 0
+//     _name = '';
+//     _price = 0;
 
 //     constructor({ name, price }) {
 //         this._name = name
@@ -86,6 +86,7 @@ class ProductItem {
 //     }
 
 //     render() {
+//          return 
 //     }
 
 
