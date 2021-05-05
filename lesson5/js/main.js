@@ -5,7 +5,10 @@ const app = new Vue({
   data: {
     catalogUrl: '/catalogData.json',
     products: [],
-    imgCatalog: 'https://placehold.it/200x150'
+    imgCatalog: 'https://via.placeholder.com/350x150',
+    imgCatalogCard: 'https://via.placeholder.com/50x50',
+    visible: false,
+    cardItems: [],
   },
   methods: {
     getJson(url){
@@ -17,7 +20,11 @@ const app = new Vue({
     },
     addProduct(product){
       console.log(product.id_product);
-    }
+      this.cardItems.push(product)
+    },
+    deleteItem(idx) {
+      this.cardItems.splice(idx, 1);
+    },
   },
   beforeCreate() {},
   created() {
