@@ -2,23 +2,6 @@
 
 
 const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
-// ПРОМИСЫ
-// let getRequest = (url) => {
-//         return new Promise((resolve, reject) => {
-//             let xhr = new XMLHttpRequest();
-//             xhr.open("GET", url, true);
-//             xhr.onreadystatechange = () => {
-//                 if(xhr.readyState === 4){
-//                     if(xhr.status !== 200){
-//                         reject('Error');
-//                     } else {
-//                         resolve(xhr.responseText);
-//                     }
-//                 }
-//             };
-//             xhr.send();
-//         })
-//     };
 class ProductList {
     constructor(container = '.products') {
         this.container = container;
@@ -87,37 +70,53 @@ class ProductItem {
 
 // Cart
 
-// class Cart {
-//     _items = []
-//     _tempItems = []
+class Cart {
+    constructor(container = '.cart') {
+        this.goods = [];
+        this.container = container;
+        this.render();
+    }
 
-//     constructor() {
-//     }
+    add() {
+        // const btn = document.querySelectorAll('.buy-btn');
+        // console.log(btn);
+        // btn.forEach((element) => {
+        //     element.addEventListener('click', (el) => {
+        //         this.el = el;
+        //         console.log(el);
+        //     });
+        // })
+    }
 
-//     add(item) {
+    render() {
         
-//     }
-
-//     render() {
-//     }
-// } 
+    }
+} 
 
 
 // CartItem
 
-// class CartItem {
-//     _name = ''
-//     _price = 0
+class CartItem {
+    constructor(product) {
+        this._title = product.title;
+        this._price = product.price;
+    }
 
-//     constructor({ name, price }) {
-//         this._name = name
-//         this._price = price
-//     }
+    render() {
+        return `<div class="cart">
+        <div class="cart__item">
+            <img src="https://via.placeholder.com/100x50" alt="">
+            <div class="desc">
+                <h3>${this.title}</h3>
+                <p>${this.price}</p>
+                <button class = "btn-del">Убрать</button>
+                </div>
+        </div>
+    </div>`;
+    }
 
-//     render() {
-//     }
 
-
-// }
+}
 
 new ProductList();
+new Cart();
