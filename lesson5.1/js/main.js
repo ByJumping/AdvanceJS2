@@ -71,6 +71,11 @@ const app = new Vue({
           }
         });
   },
+    computed: {
+      totalSum() {
+        return this.cardItems.reduce((total, {price, quantity}) => total + price * quantity, 0)
+      }
+    },
   mounted() {},
   beforeMount() {},
   beforeUpdate() {},
