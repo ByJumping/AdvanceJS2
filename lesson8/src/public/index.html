@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Интернет-магазин</title>
-</head>
-<body>
-<div id="app">
-    <header>
-        <div class="logo">E-shop</div>
-        <div class="cart">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container header-wrap">
+          <div class="header__left">
             <search></search>
-            <cart ref="cart"></cart>
+          </div>
+          <div class="header__right">
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="header-icons">
+              <cart ref="cart"></cart>
+            </div>
+          </div>
         </div>
-    </header>
-    <main>
-        <products ref="products"></products>
-        <error ref="error"></error>
-    </main>
-</div>
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+        <nav class="menu">
+          <h3 class="menu__heading">menu</h3>
+          <ul class="menu-list">
+            <li class="menu-list__title"><a href="#">man</a></li>
+            <li class="menu-list__item"><a href="#">Accessories</a></li>
+            <li class="menu-list__item"><a href="#">Bags</a></li>
+            <li class="menu-list__item"><a href="#">Denim</a></li>
+            <li class="menu-list__item"><a href="#">T-Shirts</a></li>
+          </ul>
+          <ul class="menu-list">
+            <li class="menu-list__title"><a href="#">woman</a></li>
+            <li class="menu-list__item"><a href="#">Jackets & Coats</a></li>
+            <li class="menu-list__item"><a href="#">Polos</a></li>
+            <li class="menu-list__item"><a href="#">T-Shirts</a></li>
+            <li class="menu-list__item"><a href="#">Shirts</a></li>
+          </ul>
+          <ul class="menu-list">
+            <li class="menu-list__title"><a href="#">kids</a></li>
+            <li class="menu-list__item"><a href="#">Accessories</a></li>
+            <li class="menu-list__item"><a href="#">Jackets & Coats</a></li>
+            <li class="menu-list__item"><a href="#">Polos</a></li>
+            <li class="menu-list__item"><a href="#">T-Shirts</a></li>
+            <li class="menu-list__item"><a href="#">Shirts</a></li>
+            <li class="menu-list__item"><a href="#">Bags</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="main-cards">
+          <div class="container">
+            <h2 class="main-cards__heading">Fetured Items</h2>
+            <p class="main-cards__text">
+              Shop for items based on what we featured in this week
+            </p>
+            <products ref="products"></products>
+          </div>
+        </section>
+      </main>
+      <error ref="error"></error>
+    </div>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</body>
+  </body>
 </html>
