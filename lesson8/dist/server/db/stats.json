@@ -1,0 +1,14 @@
+[
+    {
+        "product": {
+            "quantity": 1,
+            "id_product": 1,
+            "product_name": "Куртка",
+            "price": 50,
+            "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
+            "img": "/1.jpg"
+        },
+        "timeChange": "July 7th 2021, 1:02:18 pm",
+        "action": "addGoodsToCart"
+    }
+]
